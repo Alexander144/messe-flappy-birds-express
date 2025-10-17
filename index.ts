@@ -10,7 +10,7 @@ const port = 3000;
 
 // ----------------- CORS -----------------
 const corsOptions = {
-  origin: "https://christmas-advent-game.vercel.app",
+  origin: "https://messe-flappy-birds-express.vercel.app",
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   optionsSuccessStatus: 200,
