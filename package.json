@@ -1,19 +1,20 @@
 {
-  "name": "julekalenderexpress",
+  "name": "messe-flappy-birds-express",
   "version": "1.0.0",
-  "description": "A TypeScript-based Express application for the julekalender",
+  "description": "A TypeScript-based Express application for the messe flappy birds",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
     "start": "node dist/index.js",
-    "dev": "tsc --watch",
+    "dev": "tsx watch index.ts",
     "build": "tsc"
   },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/express": "^4.17.13",
     "@types/node": "^18.0.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "tsx": "^4.7.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

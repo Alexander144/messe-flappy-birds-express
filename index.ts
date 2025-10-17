@@ -31,10 +31,10 @@ const isDev = process.env.NODE_ENV !== "production";
 const rootDir = isDev ? path.join(__dirname, "..") : __dirname;
 
 // ----------------- Static files -----------------
-app.use(express.static(path.join(rootDir, "html-game-export")));
+app.use(express.static(path.join(__dirname, "html-game-export")));
 
 app.get("/", (req: Request, res: Response) => {
-  res.sendFile(path.join(rootDir, "html-game-export", "GodotGame.html"));
+  res.sendFile(path.join(__dirname, "html-game-export", "FlappyBirdGame.html"));
 });
 
 // ----------------- JSON parser -----------------
@@ -92,4 +92,5 @@ app.get("/api/users", async (req: Request, res: Response) => {
 
 app.listen(port, () => {
   console.log(`🚀 Server running at http://localhost:${port}`);
+  console.log("name", __dirname);
 });
