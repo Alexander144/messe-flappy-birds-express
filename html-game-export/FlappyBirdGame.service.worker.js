@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1762459222|8150699964';
+const CACHE_VERSION = '1762500848|2204740370';
 /** @type {string} */
 const CACHE_PREFIX = 'FlappyBirdGame-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
